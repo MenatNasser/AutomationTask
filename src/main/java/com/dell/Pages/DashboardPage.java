@@ -22,7 +22,7 @@ public class DashboardPage extends BaseTest {
     public WebElement adminPage;
     @FindBy(css = "div.panel.panel-default > form > button")
     public WebElement addAdminBtn;
-    @FindBy (className = "btn btn-primary")
+    @FindBy (className = "btn-primary")
     public WebElement submitBtn;
     @FindBy (name= "fname")
     public WebElement firstName;
@@ -44,9 +44,21 @@ public class DashboardPage extends BaseTest {
     public WebElement address2;
     @FindBy(name = "status")
     public WebElement status;
+    @FindBy(css="div:nth-child(1) > div > div.panel-body > ul > li:nth-child(5) > label")
+    public WebElement addLocation;
+    @FindBy(css = "div:nth-child(2) > div > div.panel-body > ul > li:nth-child(5) > label")
+    public WebElement editLocation;
 
 
 
+
+    public WebElement changesSavedNotification()
+    {
+
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector("div.ui-pnotify > div)")));
+        return driver.findElement(By.cssSelector("div.ui-pnotify > div"));
+    }
     public WebElement emptyEmailFieldError() {
         WebDriverWait wait = new WebDriverWait(driver, 5);
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector("div.alert.alert-danger > p:nth-child(2)")));
@@ -72,6 +84,12 @@ public class DashboardPage extends BaseTest {
         WebDriverWait wait = new WebDriverWait(driver, 5);
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector("div.alert.alert-danger > p:nth-child(6)")));
         return driver.findElement(By.cssSelector("div.alert.alert-danger > p:nth-child(6))"));
+    }
+    public WebElement shortPasswordError()
+    {
+        WebDriverWait wait = new WebDriverWait(driver, 5);
+        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector(" #content > div.alert.alert-danger > p")));
+        return driver.findElement(By.cssSelector(" #content > div.alert.alert-danger > p)"));
     }
 
 

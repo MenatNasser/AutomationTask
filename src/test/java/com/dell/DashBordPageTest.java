@@ -6,13 +6,10 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
+import org.openqa.selenium.support.ui.Select;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
@@ -76,12 +73,20 @@ public class DashBordPageTest {
         dashboardPage.firstName.sendKeys("Admin");
         dashboardPage.lasttName.sendKeys("Test");
         dashboardPage.email.sendKeys("mennafortesting@gmail.com");
-        dashboardPage.password.sendKeys("Menna");
+        dashboardPage.password.sendKeys("Menna13");
         dashboardPage.mobile.sendKeys("1234567");
         dashboardPage.country.click();
-        dashboardPage.country.se
+        WebElement countrySelected= driver.findElement(By.cssSelector("#select2-drop > ul > li:nth-child(6)"));
+        countrySelected.click();
         dashboardPage.address1.sendKeys("Address 1");
         dashboardPage.address2.sendKeys("Address 2");
+        //dashboardPage.status.click();
+        //dashboardPage.status.selectByValue("yes");
+        dashboardPage.addLocation.click();
+        dashboardPage.editLocation.click();
+        dashboardPage.submitBtn.click();
+//        assertTrue(dashboardPage.changesSavedNotification().isDisplayed());
+
 
     }
 
