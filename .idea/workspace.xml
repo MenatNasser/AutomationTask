@@ -38,8 +38,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/dell/AdminLoginPageTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-527">
-              <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="86" />
+            <state relative-caret-position="208">
+              <caret line="114" column="5" lean-forward="true" selection-start-line="114" selection-start-column="5" selection-end-line="125" selection-end-column="9" />
               <folding>
                 <element signature="e#1780#3026#0" />
                 <element signature="e#2320#3030#0" />
@@ -52,8 +52,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/dell/DashBordPageTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="86" column="40" lean-forward="true" selection-start-line="86" selection-start-column="40" selection-end-line="86" selection-end-column="40" />
+            <state relative-caret-position="275">
+              <caret line="120" column="9" lean-forward="true" selection-start-line="120" selection-start-column="9" selection-end-line="120" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,8 +64,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/dell/Pages/DashboardPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="33" column="31" lean-forward="true" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+            <state relative-caret-position="427">
+              <caret line="106" column="13" lean-forward="true" selection-start-line="106" selection-start-column="13" selection-end-line="106" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -90,8 +90,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/dell/Base/BaseTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dell/Pages/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/dell/AdminLoginPageTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/dell/DashBordPageTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dell/Pages/DashboardPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dell/DashBordPageTest.java" />
       </list>
     </option>
   </component>
@@ -196,7 +196,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558003056151" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558032940941" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -218,23 +218,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DashBordPageTest.addNewAdmin">
-    <configuration name="AdminLoginPageTest.forgetPasswordCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="selenium" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dell.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.dell" />
-      <option name="MAIN_CLASS_NAME" value="com.dell.AdminLoginPageTest" />
-      <option name="METHOD_NAME" value="forgetPasswordCase" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.DashBordPageTest.repatedEmailUsed">
     <configuration name="AdminLoginPageTest.invalidCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium" />
       <extension name="coverage">
@@ -251,22 +235,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AdminLoginPageTest.invalidEmailCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="selenium" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dell.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.dell" />
-      <option name="MAIN_CLASS_NAME" value="com.dell.AdminLoginPageTest" />
-      <option name="METHOD_NAME" value="invalidEmailCase" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DashBordPageTest.addNewAdmin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium" />
       <extension name="coverage">
@@ -278,6 +246,38 @@
       <option name="PACKAGE_NAME" value="com.dell" />
       <option name="MAIN_CLASS_NAME" value="com.dell.DashBordPageTest" />
       <option name="METHOD_NAME" value="addNewAdmin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DashBordPageTest.leaveFormEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="selenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dell.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dell" />
+      <option name="MAIN_CLASS_NAME" value="com.dell.DashBordPageTest" />
+      <option name="METHOD_NAME" value="leaveFormEmpty" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DashBordPageTest.repatedEmailUsed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="selenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dell.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dell" />
+      <option name="MAIN_CLASS_NAME" value="com.dell.DashBordPageTest" />
+      <option name="METHOD_NAME" value="repatedEmailUsed" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -301,11 +301,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DashBordPageTest.repatedEmailUsed" />
+        <item itemvalue="JUnit.DashBordPageTest.leaveFormEmpty" />
         <item itemvalue="JUnit.DashBordPageTest.addNewAdmin" />
         <item itemvalue="JUnit.DashBordPageTest.testMailInputExists" />
         <item itemvalue="JUnit.AdminLoginPageTest.invalidCase" />
-        <item itemvalue="JUnit.AdminLoginPageTest.invalidEmailCase" />
-        <item itemvalue="JUnit.AdminLoginPageTest.forgetPasswordCase" />
       </list>
     </recent_temporary>
   </component>
@@ -319,44 +319,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1557924003479</updated>
-      <workItem from="1557924007181" duration="19145000" />
+      <workItem from="1557924007181" duration="23462000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DashBordPageTest_addNewAdmin - 2019.05.16 at 11h 10m 08s.xml">
-      <configuration name="DashBordPageTest.addNewAdmin" configurationId="JUnit" />
+    <history-entry file="DashBordPageTest_leaveFormEmpty - 2019.05.16 at 20h 25m 30s.xml">
+      <configuration name="DashBordPageTest.leaveFormEmpty" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DashBordPageTest_addNewAdmin - 2019.05.16 at 11h 15m 03s.xml">
-      <configuration name="DashBordPageTest.addNewAdmin" configurationId="JUnit" />
+    <history-entry file="DashBordPageTest_leaveFormEmpty - 2019.05.16 at 20h 26m 57s.xml">
+      <configuration name="DashBordPageTest.leaveFormEmpty" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DashBordPageTest_addNewAdmin - 2019.05.16 at 11h 21m 19s.xml">
-      <configuration name="DashBordPageTest.addNewAdmin" configurationId="JUnit" />
+    <history-entry file="DashBordPageTest_leaveFormEmpty - 2019.05.16 at 20h 30m 32s.xml">
+      <configuration name="DashBordPageTest.leaveFormEmpty" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DashBordPageTest_addNewAdmin - 2019.05.16 at 11h 49m 13s.xml">
-      <configuration name="DashBordPageTest.addNewAdmin" configurationId="JUnit" />
+    <history-entry file="DashBordPageTest_leaveFormEmpty - 2019.05.16 at 20h 31m 15s.xml">
+      <configuration name="DashBordPageTest.leaveFormEmpty" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DashBordPageTest_addNewAdmin - 2019.05.16 at 11h 57m 43s.xml">
-      <configuration name="DashBordPageTest.addNewAdmin" configurationId="JUnit" />
+    <history-entry file="DashBordPageTest_leaveFormEmpty - 2019.05.16 at 20h 40m 08s.xml">
+      <configuration name="DashBordPageTest.leaveFormEmpty" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DashBordPageTest_addNewAdmin - 2019.05.16 at 12h 11m 14s.xml">
-      <configuration name="DashBordPageTest.addNewAdmin" configurationId="JUnit" />
+    <history-entry file="DashBordPageTest_leaveFormEmpty - 2019.05.16 at 20h 41m 16s.xml">
+      <configuration name="DashBordPageTest.leaveFormEmpty" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DashBordPageTest_addNewAdmin - 2019.05.16 at 12h 24m 12s.xml">
-      <configuration name="DashBordPageTest.addNewAdmin" configurationId="JUnit" />
+    <history-entry file="DashBordPageTest_leaveFormEmpty - 2019.05.16 at 20h 44m 29s.xml">
+      <configuration name="DashBordPageTest.leaveFormEmpty" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DashBordPageTest_addNewAdmin - 2019.05.16 at 12h 25m 11s.xml">
-      <configuration name="DashBordPageTest.addNewAdmin" configurationId="JUnit" />
+    <history-entry file="DashBordPageTest_repatedEmailUsed - 2019.05.16 at 20h 50m 45s.xml">
+      <configuration name="DashBordPageTest.repatedEmailUsed" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DashBordPageTest_addNewAdmin - 2019.05.16 at 12h 25m 50s.xml">
-      <configuration name="DashBordPageTest.addNewAdmin" configurationId="JUnit" />
+    <history-entry file="DashBordPageTest_repatedEmailUsed - 2019.05.16 at 20h 51m 44s.xml">
+      <configuration name="DashBordPageTest.repatedEmailUsed" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DashBordPageTest_addNewAdmin - 2019.05.16 at 12h 27m 54s.xml">
-      <configuration name="DashBordPageTest.addNewAdmin" configurationId="JUnit" />
+    <history-entry file="DashBordPageTest_repatedEmailUsed - 2019.05.16 at 20h 52m 56s.xml">
+      <configuration name="DashBordPageTest.repatedEmailUsed" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19145000" />
+    <option name="totallyTimeSpent" value="23462000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="945" extended-state="0" />
@@ -442,8 +442,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/dell/AdminLoginPageTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-527">
-          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="86" />
+        <state relative-caret-position="208">
+          <caret line="114" column="5" lean-forward="true" selection-start-line="114" selection-start-column="5" selection-end-line="125" selection-end-column="9" />
           <folding>
             <element signature="e#1780#3026#0" />
             <element signature="e#2320#3030#0" />
@@ -454,8 +454,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/dell/DashBordPageTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="86" column="40" lean-forward="true" selection-start-line="86" selection-start-column="40" selection-end-line="86" selection-end-column="40" />
+        <state relative-caret-position="275">
+          <caret line="120" column="9" lean-forward="true" selection-start-line="120" selection-start-column="9" selection-end-line="120" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -464,8 +464,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dell/Pages/DashboardPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="33" column="31" lean-forward="true" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+        <state relative-caret-position="427">
+          <caret line="106" column="13" lean-forward="true" selection-start-line="106" selection-start-column="13" selection-end-line="106" selection-end-column="13" />
         </state>
       </provider>
     </entry>

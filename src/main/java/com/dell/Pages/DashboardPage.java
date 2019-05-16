@@ -55,41 +55,49 @@ public class DashboardPage extends BaseTest {
     public WebElement changesSavedNotification()
     {
 
-        WebDriverWait wait = new WebDriverWait(driver, 10);
-        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector("div.ui-pnotify > div)")));
-        return driver.findElement(By.cssSelector("div.ui-pnotify > div"));
+        WebDriverWait wait = new WebDriverWait(driver, 15);
+        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("ui-pnotify-shadow")));
+        return driver.findElement(By.className("ui-pnotify-shadow"));
     }
     public WebElement emptyEmailFieldError() {
         WebDriverWait wait = new WebDriverWait(driver, 5);
-        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector("div.alert.alert-danger > p:nth-child(2)")));
-        return driver.findElement(By.cssSelector("div.alert.alert-danger > p:nth-child(2)"));
+        //wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector("div.alert.alert-danger > p:nth-child(2)")));
+        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//*[contains(text(),'The Email field is required.')]")));
+        return driver.findElement(By.xpath("//*[contains(text(),'The Email field is required.')]"));
     }
     public WebElement emptyPasswordFieldError() {
         WebDriverWait wait = new WebDriverWait(driver, 5);
-        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector("div.alert.alert-danger > p:nth-child(3)")));
-        return driver.findElement(By.cssSelector("div.alert.alert-danger > p:nth-child(3)"));
+        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//*[contains(text(),'The Password field is required.')]")));
+        return driver.findElement(By.xpath("//*[contains(text(),'The Password field is required.')]"));
     }
     public WebElement emptyCountryFieldError() {
         WebDriverWait wait = new WebDriverWait(driver, 5);
-        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector("div.alert.alert-danger > p:nth-child(4)")));
-        return driver.findElement(By.cssSelector("div.alert.alert-danger > p:nth-child(4)"));
+        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//*[contains(text(),'The Country field is required.')]")));
+        return driver.findElement(By.xpath("//*[contains(text(),'The Country field is required.')]"));
     }
 
     public WebElement emptyFirstNameFieldError() {
         WebDriverWait wait = new WebDriverWait(driver, 5);
-        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector("div.alert.alert-danger > p:nth-child(5)")));
-        return driver.findElement(By.cssSelector("div.alert.alert-danger > p:nth-child(5))"));
+        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//*[contains(text(),'The First Name field is required.')]")));
+        return driver.findElement(By.xpath("//*[contains(text(),'The First Name field is required.')]"));
     }
     public WebElement emptyLastNameFieldError() {
         WebDriverWait wait = new WebDriverWait(driver, 5);
-        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector("div.alert.alert-danger > p:nth-child(6)")));
-        return driver.findElement(By.cssSelector("div.alert.alert-danger > p:nth-child(6))"));
+        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//*[contains(text(),'The Last Name field is required.')]")));
+        return driver.findElement(By.xpath("//*[contains(text(),'The Last Name field is required.')]"));
     }
     public WebElement shortPasswordError()
     {
         WebDriverWait wait = new WebDriverWait(driver, 5);
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector(" #content > div.alert.alert-danger > p")));
         return driver.findElement(By.cssSelector(" #content > div.alert.alert-danger > p)"));
+    }
+
+    public WebElement repeatedEmailError()
+    {
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector("div.alert.alert-danger > p)")));
+        return driver.findElement(By.cssSelector("div.alert.alert-danger > p"));
     }
 
 
