@@ -26,10 +26,25 @@ public class DashboardPage extends BaseTest {
     public WebElement submitBtn;
     @FindBy (name= "fname")
     public WebElement firstName;
-    @FindBy (name= "lname")
+    @FindBy(name = "lname")
     public WebElement lasttName;
-    @FindBy (name= "lname")
-    public WebElement lasttName;
+    @FindBy(name = "email")
+    public WebElement email;
+    @FindBy(name = "password")
+    public WebElement password;
+    @FindBy(name = "mobile")
+    public WebElement mobile;
+    //    @FindBy(className = "select2-choice")
+//    public WebElement country;
+    @FindBy(id = "s2id_autogen1")
+    public WebElement country;
+    @FindBy(name = "address1")
+    public WebElement address1;
+    @FindBy(name = "address2")
+    public WebElement address2;
+    @FindBy(name = "status")
+    public WebElement status;
+
 
 
     public WebElement emptyEmailFieldError() {

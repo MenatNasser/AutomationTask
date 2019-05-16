@@ -71,7 +71,17 @@ public class DashBordPageTest {
         dashboardPage.adminPage.click();
         assertTrue(dashboardPage.addAdminBtn.isDisplayed());
         dashboardPage.addAdminBtn.click();
-
+//        WebDriverWait wait = new WebDriverWait(driver, 10);
+//        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector("form > div > div.panel-heading")));
+        dashboardPage.firstName.sendKeys("Admin");
+        dashboardPage.lasttName.sendKeys("Test");
+        dashboardPage.email.sendKeys("mennafortesting@gmail.com");
+        dashboardPage.password.sendKeys("Menna");
+        dashboardPage.mobile.sendKeys("1234567");
+        dashboardPage.country.click();
+        dashboardPage.country.se
+        dashboardPage.address1.sendKeys("Address 1");
+        dashboardPage.address2.sendKeys("Address 2");
 
     }
 
