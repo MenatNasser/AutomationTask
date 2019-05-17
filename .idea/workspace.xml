@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d076dbc3-7653-4c25-beb6-526deda82c6e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dell/NewAdminScenariosTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dell/Pages/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dell/Pages/DashboardPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dell/Pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dell/Pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dell/AdminLoginPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dell/AdminLoginPageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/dell/DashBordPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dell/DashBordPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dell/Pages/DashboardPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dell/Pages/DashboardPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dell/Pages/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dell/Pages/LoginPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dell/AdminLoginPageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dell/AdminLoginPageTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dell/DashBordPageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dell/DashBordPageTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,19 +25,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dell/Pages/LoginPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="694">
-              <caret line="59" column="8" selection-start-line="59" selection-end-line="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/dell/Base/BaseTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+            <state relative-caret-position="195">
+              <caret line="31" column="33" lean-forward="true" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -36,13 +37,41 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dell/Pages/LoginPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="717">
+              <caret line="59" column="139" lean-forward="true" selection-start-line="57" selection-start-column="8" selection-end-line="59" selection-end-column="139" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dell/Pages/DashboardPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="145">
+              <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/Config.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/dell/AdminLoginPageTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="114" column="5" lean-forward="true" selection-start-line="114" selection-start-column="5" selection-end-line="125" selection-end-column="9" />
+            <state relative-caret-position="30">
+              <caret line="33" column="8" lean-forward="true" selection-start-line="33" selection-start-column="8" selection-end-line="58" selection-end-column="9" />
               <folding>
                 <element signature="e#1780#3026#0" />
                 <element signature="e#2320#3030#0" />
+                <element signature="e#3069#4435#0" />
                 <element signature="method#invalidCase#0;class#AdminLoginPageTest#0" />
               </folding>
             </state>
@@ -52,34 +81,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/dell/DashBordPageTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="120" column="9" lean-forward="true" selection-start-line="120" selection-start-column="9" selection-end-line="120" selection-end-column="9" />
+            <state relative-caret-position="346">
+              <caret line="85" column="25" lean-forward="true" selection-start-line="85" selection-start-column="25" selection-end-line="85" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#leaveFormEmpty#0;class#DashBordPageTest#0" />
+                <element signature="method#repatedEmailUsed#0;class#DashBordPageTest#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dell/Pages/DashboardPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="106" column="13" lean-forward="true" selection-start-line="106" selection-start-column="13" selection-end-line="106" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/Config.properties">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/dell/NewAdminScenariosTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="13" selection-start-line="3" selection-end-line="3" selection-end-column="13" />
+            <state relative-caret-position="270">
+              <caret line="60" selection-start-line="59" selection-end-line="60" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#loginWithNewAdmin#0;class#NewAdminScenariosTest#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>f</find>
+      <find>resultlogin</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -88,10 +127,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/dell/Base/BaseTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dell/Pages/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/dell/AdminLoginPageTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dell/Pages/DashboardPage.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/Config.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dell/Pages/LoginPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dell/NewAdminScenariosTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/dell/DashBordPageTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dell/Pages/DashboardPage.java" />
       </list>
     </option>
   </component>
@@ -196,7 +237,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558032940941" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558116912832" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -218,8 +259,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DashBordPageTest.repatedEmailUsed">
-    <configuration name="AdminLoginPageTest.invalidCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.DashBordPageTest.editNewAdmin">
+    <configuration name="AdminLoginPageTest.successFullLoginWithCredentialsCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium" />
       <extension name="coverage">
         <pattern>
@@ -229,7 +270,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.dell" />
       <option name="MAIN_CLASS_NAME" value="com.dell.AdminLoginPageTest" />
-      <option name="METHOD_NAME" value="invalidCase" />
+      <option name="METHOD_NAME" value="successFullLoginWithCredentialsCase" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -251,7 +292,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DashBordPageTest.leaveFormEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DashBordPageTest.editNewAdmin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium" />
       <extension name="coverage">
         <pattern>
@@ -261,13 +302,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.dell" />
       <option name="MAIN_CLASS_NAME" value="com.dell.DashBordPageTest" />
-      <option name="METHOD_NAME" value="leaveFormEmpty" />
+      <option name="METHOD_NAME" value="editNewAdmin" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DashBordPageTest.repatedEmailUsed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NewAdminScenariosTest.addNewLocation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium" />
       <extension name="coverage">
         <pattern>
@@ -276,14 +317,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.dell" />
-      <option name="MAIN_CLASS_NAME" value="com.dell.DashBordPageTest" />
-      <option name="METHOD_NAME" value="repatedEmailUsed" />
+      <option name="MAIN_CLASS_NAME" value="com.dell.NewAdminScenariosTest" />
+      <option name="METHOD_NAME" value="addNewLocation" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DashBordPageTest.testMailInputExists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NewAdminScenariosTest.loginWithNewAdmin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium" />
       <extension name="coverage">
         <pattern>
@@ -292,8 +333,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.dell" />
-      <option name="MAIN_CLASS_NAME" value="com.dell.DashBordPageTest" />
-      <option name="METHOD_NAME" value="testMailInputExists" />
+      <option name="MAIN_CLASS_NAME" value="com.dell.NewAdminScenariosTest" />
+      <option name="METHOD_NAME" value="loginWithNewAdmin" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -301,11 +342,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DashBordPageTest.repatedEmailUsed" />
-        <item itemvalue="JUnit.DashBordPageTest.leaveFormEmpty" />
+        <item itemvalue="JUnit.DashBordPageTest.editNewAdmin" />
+        <item itemvalue="JUnit.NewAdminScenariosTest.addNewLocation" />
+        <item itemvalue="JUnit.NewAdminScenariosTest.loginWithNewAdmin" />
         <item itemvalue="JUnit.DashBordPageTest.addNewAdmin" />
-        <item itemvalue="JUnit.DashBordPageTest.testMailInputExists" />
-        <item itemvalue="JUnit.AdminLoginPageTest.invalidCase" />
+        <item itemvalue="JUnit.AdminLoginPageTest.successFullLoginWithCredentialsCase" />
       </list>
     </recent_temporary>
   </component>
@@ -319,44 +360,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1557924003479</updated>
-      <workItem from="1557924007181" duration="23462000" />
+      <workItem from="1557924007181" duration="38867000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DashBordPageTest_leaveFormEmpty - 2019.05.16 at 20h 25m 30s.xml">
-      <configuration name="DashBordPageTest.leaveFormEmpty" configurationId="JUnit" />
+    <history-entry file="NewAdminScenariosTest_loginWithNewAdmin - 2019.05.17 at 18h 35m 43s.xml">
+      <configuration name="NewAdminScenariosTest.loginWithNewAdmin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DashBordPageTest_leaveFormEmpty - 2019.05.16 at 20h 26m 57s.xml">
-      <configuration name="DashBordPageTest.leaveFormEmpty" configurationId="JUnit" />
+    <history-entry file="NewAdminScenariosTest_loginWithNewAdmin - 2019.05.17 at 18h 36m 44s.xml">
+      <configuration name="NewAdminScenariosTest.loginWithNewAdmin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DashBordPageTest_leaveFormEmpty - 2019.05.16 at 20h 30m 32s.xml">
-      <configuration name="DashBordPageTest.leaveFormEmpty" configurationId="JUnit" />
+    <history-entry file="NewAdminScenariosTest_loginWithNewAdmin - 2019.05.17 at 18h 37m 10s.xml">
+      <configuration name="NewAdminScenariosTest.loginWithNewAdmin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DashBordPageTest_leaveFormEmpty - 2019.05.16 at 20h 31m 15s.xml">
-      <configuration name="DashBordPageTest.leaveFormEmpty" configurationId="JUnit" />
+    <history-entry file="NewAdminScenariosTest_loginWithNewAdmin - 2019.05.17 at 18h 37m 53s.xml">
+      <configuration name="NewAdminScenariosTest.loginWithNewAdmin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DashBordPageTest_leaveFormEmpty - 2019.05.16 at 20h 40m 08s.xml">
-      <configuration name="DashBordPageTest.leaveFormEmpty" configurationId="JUnit" />
+    <history-entry file="NewAdminScenariosTest_loginWithNewAdmin - 2019.05.17 at 18h 38m 26s.xml">
+      <configuration name="NewAdminScenariosTest.loginWithNewAdmin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DashBordPageTest_leaveFormEmpty - 2019.05.16 at 20h 41m 16s.xml">
-      <configuration name="DashBordPageTest.leaveFormEmpty" configurationId="JUnit" />
+    <history-entry file="NewAdminScenariosTest_addNewLocation - 2019.05.17 at 18h 57m 01s.xml">
+      <configuration name="NewAdminScenariosTest.addNewLocation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DashBordPageTest_leaveFormEmpty - 2019.05.16 at 20h 44m 29s.xml">
-      <configuration name="DashBordPageTest.leaveFormEmpty" configurationId="JUnit" />
+    <history-entry file="NewAdminScenariosTest_addNewLocation - 2019.05.17 at 19h 49m 24s.xml">
+      <configuration name="NewAdminScenariosTest.addNewLocation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DashBordPageTest_repatedEmailUsed - 2019.05.16 at 20h 50m 45s.xml">
-      <configuration name="DashBordPageTest.repatedEmailUsed" configurationId="JUnit" />
+    <history-entry file="NewAdminScenariosTest_addNewLocation - 2019.05.17 at 19h 54m 41s.xml">
+      <configuration name="NewAdminScenariosTest.addNewLocation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DashBordPageTest_repatedEmailUsed - 2019.05.16 at 20h 51m 44s.xml">
-      <configuration name="DashBordPageTest.repatedEmailUsed" configurationId="JUnit" />
+    <history-entry file="DashBordPageTest_editNewAdmin - 2019.05.17 at 20h 10m 25s.xml">
+      <configuration name="DashBordPageTest.editNewAdmin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DashBordPageTest_repatedEmailUsed - 2019.05.16 at 20h 52m 56s.xml">
-      <configuration name="DashBordPageTest.repatedEmailUsed" configurationId="JUnit" />
+    <history-entry file="DashBordPageTest_editNewAdmin - 2019.05.17 at 20h 12m 37s.xml">
+      <configuration name="DashBordPageTest.editNewAdmin" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23462000" />
+    <option name="totallyTimeSpent" value="38867000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="945" extended-state="0" />
@@ -396,18 +437,6 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/dell/Base/BaseTest.java</url>
-          <line>25</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar!/org/openqa/selenium/WebElement.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -416,56 +445,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="13" selection-start-line="3" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dell/Base/BaseTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+        <state relative-caret-position="195">
+          <caret line="31" column="33" lean-forward="true" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dell/Pages/LoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="694">
-          <caret line="59" column="8" selection-start-line="59" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/dell/AdminLoginPageTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="114" column="5" lean-forward="true" selection-start-line="114" selection-start-column="5" selection-end-line="125" selection-end-column="9" />
+        <state relative-caret-position="30">
+          <caret line="33" column="8" lean-forward="true" selection-start-line="33" selection-start-column="8" selection-end-line="58" selection-end-column="9" />
           <folding>
             <element signature="e#1780#3026#0" />
             <element signature="e#2320#3030#0" />
+            <element signature="e#3069#4435#0" />
             <element signature="method#invalidCase#0;class#AdminLoginPageTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dell/Pages/LoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="717">
+          <caret line="59" column="139" lean-forward="true" selection-start-line="57" selection-start-column="8" selection-end-line="59" selection-end-column="139" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dell/NewAdminScenariosTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="60" selection-start-line="59" selection-end-line="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#loginWithNewAdmin#0;class#NewAdminScenariosTest#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/dell/DashBordPageTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="120" column="9" lean-forward="true" selection-start-line="120" selection-start-column="9" selection-end-line="120" selection-end-column="9" />
+        <state relative-caret-position="346">
+          <caret line="85" column="25" lean-forward="true" selection-start-line="85" selection-start-column="25" selection-end-line="85" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#leaveFormEmpty#0;class#DashBordPageTest#0" />
+            <element signature="method#repatedEmailUsed#0;class#DashBordPageTest#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dell/Pages/DashboardPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="106" column="13" lean-forward="true" selection-start-line="106" selection-start-column="13" selection-end-line="106" selection-end-column="13" />
+        <state relative-caret-position="145">
+          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
         </state>
       </provider>
     </entry>

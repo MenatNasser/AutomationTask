@@ -26,7 +26,6 @@ public class LoginPage extends BaseTest {
     @FindBy(id = "link-forgot")
     public WebElement forgetPassworLnk;
 
-
     public LoginPage(WebDriver webDriver) {
         //calling constructor of BaseTest
         super(webDriver);
@@ -50,7 +49,7 @@ public class LoginPage extends BaseTest {
     }
 
     public WebElement redirectionMessage() {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, 5);
         WebElement redirectionSuccessAlert = driver.findElement(By.cssSelector("form.form-signin.form-horizontal.wow.fadeIn.animated.animated > div.resultlogin > div"));
         return driver.findElement(By.cssSelector("form.form-signin.form-horizontal.wow.fadeIn.animated.animated > div.resultlogin > div"));
     }
@@ -64,9 +63,10 @@ public class LoginPage extends BaseTest {
     /**
      * Sucess login for manging the flow
      */
-   public void login(){
-        emailField.sendKeys(properties.getProperty("emailAdmin"));
-        passwordField.sendKeys(properties.getProperty("passwordAdmin"));
+   public void login(String username, String password){
+
+        emailField.sendKeys(username);
+        passwordField.sendKeys(password);
         rememebermeChk.click();
         loginButton.click();
     }

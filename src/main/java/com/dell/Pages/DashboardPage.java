@@ -22,6 +22,8 @@ public class DashboardPage extends BaseTest {
     public WebElement adminPage;
     @FindBy(css = "div.panel.panel-default > form > button")
     public WebElement addAdminBtn;
+    @FindBy (className= "fa-edit")
+    public WebElement editAdmin;
     @FindBy (className = "btn-primary")
     public WebElement submitBtn;
     @FindBy (name= "fname")
@@ -34,8 +36,6 @@ public class DashboardPage extends BaseTest {
     public WebElement password;
     @FindBy(name = "mobile")
     public WebElement mobile;
-    //    @FindBy(className = "select2-choice")
-//    public WebElement country;
     @FindBy(id = "s2id_autogen1")
     public WebElement country;
     @FindBy(name = "address1")
@@ -48,16 +48,38 @@ public class DashboardPage extends BaseTest {
     public WebElement addLocation;
     @FindBy(css = "div:nth-child(2) > div > div.panel-body > ul > li:nth-child(5) > label")
     public WebElement editLocation;
+    @FindBy(xpath = "//a[@href='#Locations']")
+    public WebElement locationList;
+    @FindBy(xpath = "//a[@href='https://www.phptravels.net/supplier/locations']")
+    public WebElement locationPage;
+    @FindBy(xpath = "//a[@href='https://www.phptravels.net/admin/locations/add']")
+    public WebElement addLocationBtn;
+    @FindBy(className = "select2-choice")
+    public WebElement locationCountry;
+    @FindBy(name = "city")
+    public WebElement locationCity;
+    @FindBy (name = "longitude")
+    public WebElement locationLongt;
+    @FindBy (name = "latitude")
+    public WebElement locationLatit;
+    @FindBy(name = "status")
+    public WebElement locationStatus;
+    @FindBy(name="translated[ar][name]")
+    public WebElement locationArName;
+    @FindBy (className = "btn-primary")
+    public WebElement submitLocationBtn;
 
 
 
 
     public WebElement changesSavedNotification()
     {
-
         WebDriverWait wait = new WebDriverWait(driver, 15);
-        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("ui-pnotify-shadow")));
-        return driver.findElement(By.className("ui-pnotify-shadow"));
+        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("ui-pnotify-title")));
+        return driver.findElement(By.className("ui-pnotify-title"));
+//        WebElement redirectionSuccessAlert = driver.findElement(By.cssSelector("form.form-signin.form-horizontal.wow.fadeIn.animated.animated > div.resultlogin > div"));
+//        return driver.findElement(By.cssSelector("form.form-signin.form-horizontal.wow.fadeIn.animated.animated > div.resultlogin > div"));
+
     }
     public WebElement emptyEmailFieldError() {
         WebDriverWait wait = new WebDriverWait(driver, 5);
@@ -89,15 +111,16 @@ public class DashboardPage extends BaseTest {
     public WebElement shortPasswordError()
     {
         WebDriverWait wait = new WebDriverWait(driver, 5);
-        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector(" #content > div.alert.alert-danger > p")));
-        return driver.findElement(By.cssSelector(" #content > div.alert.alert-danger > p)"));
+        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//*[contains(text(),'The Password field must be at least 6 characters in length.')]")));
+        return driver.findElement(By.xpath("//*[contains(text(),'The Password field must be at least 6 characters in length.')]"));
     }
+
 
     public WebElement repeatedEmailError()
     {
         WebDriverWait wait = new WebDriverWait(driver, 10);
-        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector("div.alert.alert-danger > p)")));
-        return driver.findElement(By.cssSelector("div.alert.alert-danger > p"));
+        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//*[contains(text(),'The Email field must contain a unique value.')]")));
+        return driver.findElement(By.xpath("//*[contains(text(),'The Email field must contain a unique value.')]"));
     }
 
 

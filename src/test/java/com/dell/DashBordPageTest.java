@@ -10,7 +10,10 @@ import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
@@ -27,7 +30,7 @@ public class DashBordPageTest {
         //1
         LoginPage loginPage = new LoginPage(driver);
         //2
-        loginPage.login();
+        loginPage.login(loginPage.properties.getProperty("emailAdmin"),loginPage.properties.getProperty("passwordAdmin"));
         //3
         dashboardPage = loginPage.getDashboardPage();
 
@@ -65,6 +68,22 @@ public class DashBordPageTest {
         countrySelected.click();
         dashboardPage.address1.sendKeys("Address 1");
         dashboardPage.address2.sendKeys("Address 2");
+        dashboardPage.submitBtn.click();
+        assertTrue(dashboardPage.changesSavedNotification().isDisplayed());
+    }
+
+    @Test
+    public void editNewAdmin()
+    {
+        assertTrue(dashboardPage.accountList.isDisplayed());
+        dashboardPage.accountList.click();
+        dashboardPage.adminPage.click();
+        assertTrue(dashboardPage.addAdminBtn.isDisplayed());
+        WebDriverWait wait = new WebDriverWait(driver, 5);
+//        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//a[@href='https://www.phptravels.net/mailto:mennafortesting@gmail.com']")));
+        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//*[contains(text(),'mennafortesting@gmail.com')]")));
+        assertTrue(dashboardPage.editAdmin.isDisplayed());
+        dashboardPage.editAdmin.click();
         dashboardPage.addLocation.click();
         dashboardPage.editLocation.click();
         dashboardPage.submitBtn.click();
@@ -130,9 +149,43 @@ public class DashBordPageTest {
 
     }
 
+    @Test
+    public void shortPasswordUsed()
+    {
+        assertTrue(dashboardPage.accountList.isDisplayed());
+        dashboardPage.accountList.click();
+        dashboardPage.adminPage.click();
+        assertTrue(dashboardPage.addAdminBtn.isDisplayed());
+        dashboardPage.addAdminBtn.click();
+        dashboardPage.firstName.sendKeys("Admin");
+        dashboardPage.lasttName.sendKeys("Test");
+        dashboardPage.email.sendKeys("mennafortesting@gmail.com");
+        dashboardPage.password.sendKeys("Men");
+        dashboardPage.mobile.sendKeys("1234567");
+        dashboardPage.country.click();
+        WebElement countrySelected= driver.findElement(By.cssSelector("#select2-drop > ul > li:nth-child(6)"));
+        countrySelected.click();
+        dashboardPage.address1.sendKeys("Address 1");
+        dashboardPage.address2.sendKeys("Address 2");
+        dashboardPage.addLocation.click();
+        dashboardPage.editLocation.click();
+        dashboardPage.submitBtn.click();
+        try
+        {
+            assertTrue(dashboardPage.shortPasswordError().isDisplayed());
+
+        }
+        catch (TimeoutException e)
+        {
+            System.out.println("TimeOut");
+            fail();
+        }
+
+    }
+
     @After
     public void tearDown() throws Exception
     {
-//        loginPage.postStop();
+       dashboardPage.postStop();
     }
 }

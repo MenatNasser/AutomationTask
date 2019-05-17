@@ -153,7 +153,7 @@ public class AdminLoginPageTest {
 
     @After
     public void tearDown() throws Exception {
-//        loginPage.postStop();
+        loginPage.postStop();
     }
 }
 
