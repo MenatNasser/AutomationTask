@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d076dbc3-7653-4c25-beb6-526deda82c6e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/dell/NewAdminScenariosTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dell/Pages/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dell/Pages/DashboardPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dell/Pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dell/Pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/dell/AdminLoginPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dell/AdminLoginPageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/dell/DashBordPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dell/DashBordPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dell/Pages/DashboardPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dell/Pages/DashboardPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dell/Pages/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dell/Pages/LoginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dell/AdminLoginPageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dell/AdminLoginPageTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dell/DashBordPageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dell/DashBordPageTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dell/NewAdminScenariosTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dell/NewAdminScenariosTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,8 +21,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/dell/Base/BaseTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="31" column="33" lean-forward="true" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+            <state relative-caret-position="465">
+              <caret line="31" column="33" selection-end-line="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -40,16 +34,28 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/dell/Pages/LoginPage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="717">
-              <caret line="59" column="139" lean-forward="true" selection-start-line="57" selection-start-column="8" selection-end-line="59" selection-end-column="139" />
+              <caret line="59" column="139" selection-end-line="86" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dell/Pages/DashboardPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="38" column="33" lean-forward="true" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dell/Pages/DashboardPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="45">
+                <caret line="3" column="9" lean-forward="true" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -66,8 +72,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/dell/AdminLoginPageTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="33" column="8" lean-forward="true" selection-start-line="33" selection-start-column="8" selection-end-line="58" selection-end-column="9" />
+            <state relative-caret-position="330">
+              <caret line="33" column="8" selection-end-line="154" selection-end-column="7" />
               <folding>
                 <element signature="e#1780#3026#0" />
                 <element signature="e#2320#3030#0" />
@@ -81,12 +87,15 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/dell/DashBordPageTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="85" column="25" lean-forward="true" selection-start-line="85" selection-start-column="25" selection-end-line="85" selection-end-column="25" />
+            <state relative-caret-position="724">
+              <caret line="173" column="33" selection-end-line="176" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#addNewAdmin#0;class#DashBordPageTest#0" />
+                <element signature="method#editNewAdmin#0;class#DashBordPageTest#0" />
                 <element signature="method#leaveFormEmpty#0;class#DashBordPageTest#0" />
                 <element signature="method#repatedEmailUsed#0;class#DashBordPageTest#0" />
+                <element signature="method#repatedEmailUsed#1;class#DashBordPageTest#0" />
               </folding>
             </state>
           </provider>
@@ -95,8 +104,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/dell/NewAdminScenariosTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="60" selection-start-line="59" selection-end-line="60" />
+            <state relative-caret-position="390">
+              <caret line="71" column="5" selection-end-line="74" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#loginWithNewAdmin#0;class#NewAdminScenariosTest#0" />
@@ -127,12 +136,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/dell/Base/BaseTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/dell/AdminLoginPageTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/Config.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dell/Pages/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/dell/NewAdminScenariosTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/dell/DashBordPageTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dell/AdminLoginPageTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dell/Pages/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dell/Pages/DashboardPage.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -237,7 +247,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558116912832" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558117770031" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -360,14 +370,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1557924003479</updated>
-      <workItem from="1557924007181" duration="38867000" />
+      <workItem from="1557924007181" duration="39695000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="NewAdminScenariosTest_loginWithNewAdmin - 2019.05.17 at 18h 35m 43s.xml">
-      <configuration name="NewAdminScenariosTest.loginWithNewAdmin" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="NewAdminScenariosTest_loginWithNewAdmin - 2019.05.17 at 18h 36m 44s.xml">
       <configuration name="NewAdminScenariosTest.loginWithNewAdmin" configurationId="JUnit" />
     </history-entry>
@@ -395,9 +402,12 @@
     <history-entry file="DashBordPageTest_editNewAdmin - 2019.05.17 at 20h 12m 37s.xml">
       <configuration name="DashBordPageTest.editNewAdmin" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="DashBordPageTest_editNewAdmin - 2019.05.17 at 20h 15m 09s.xml">
+      <configuration name="DashBordPageTest.editNewAdmin" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38867000" />
+    <option name="totallyTimeSpent" value="39695000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="945" extended-state="0" />
@@ -408,7 +418,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.24969475" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.24969475" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" />
@@ -417,7 +427,7 @@
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32891566" />
@@ -445,29 +455,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dell/Base/BaseTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="31" column="33" lean-forward="true" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/dell/AdminLoginPageTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="33" column="8" lean-forward="true" selection-start-line="33" selection-start-column="8" selection-end-line="58" selection-end-column="9" />
-          <folding>
-            <element signature="e#1780#3026#0" />
-            <element signature="e#2320#3030#0" />
-            <element signature="e#3069#4435#0" />
-            <element signature="method#invalidCase#0;class#AdminLoginPageTest#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/Config.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -475,17 +462,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dell/Pages/LoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="717">
-          <caret line="59" column="139" lean-forward="true" selection-start-line="57" selection-start-column="8" selection-end-line="59" selection-end-column="139" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/dell/NewAdminScenariosTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="60" selection-start-line="59" selection-end-line="60" />
+        <state relative-caret-position="390">
+          <caret line="71" column="5" selection-end-line="74" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#loginWithNewAdmin#0;class#NewAdminScenariosTest#0" />
@@ -495,20 +475,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/dell/DashBordPageTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="85" column="25" lean-forward="true" selection-start-line="85" selection-start-column="25" selection-end-line="85" selection-end-column="25" />
+        <state relative-caret-position="724">
+          <caret line="173" column="33" selection-end-line="176" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#addNewAdmin#0;class#DashBordPageTest#0" />
+            <element signature="method#editNewAdmin#0;class#DashBordPageTest#0" />
             <element signature="method#leaveFormEmpty#0;class#DashBordPageTest#0" />
             <element signature="method#repatedEmailUsed#0;class#DashBordPageTest#0" />
+            <element signature="method#repatedEmailUsed#1;class#DashBordPageTest#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dell/AdminLoginPageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="33" column="8" selection-end-line="154" selection-end-column="7" />
+          <folding>
+            <element signature="e#1780#3026#0" />
+            <element signature="e#2320#3030#0" />
+            <element signature="e#3069#4435#0" />
+            <element signature="method#invalidCase#0;class#AdminLoginPageTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dell/Base/BaseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="33" selection-end-line="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dell/Pages/LoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="717">
+          <caret line="59" column="139" selection-end-line="86" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dell/Pages/DashboardPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+        <state relative-caret-position="450">
+          <caret line="38" column="33" lean-forward="true" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="45">
+            <caret line="3" column="9" lean-forward="true" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

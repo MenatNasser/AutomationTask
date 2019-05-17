@@ -30,7 +30,7 @@ public class DashBordPageTest {
         //1
         LoginPage loginPage = new LoginPage(driver);
         //2
-        loginPage.login(loginPage.properties.getProperty("emailAdmin"),loginPage.properties.getProperty("passwordAdmin"));
+        loginPage.login(loginPage.properties.getProperty("emailAdmin"), loginPage.properties.getProperty("passwordAdmin"));
         //3
         dashboardPage = loginPage.getDashboardPage();
 
@@ -51,8 +51,7 @@ public class DashBordPageTest {
     }
 
     @Test
-    public void addNewAdmin()
-    {
+    public void addNewAdmin() {
         assertTrue(dashboardPage.accountList.isDisplayed());
         dashboardPage.accountList.click();
         dashboardPage.adminPage.click();
@@ -64,7 +63,7 @@ public class DashBordPageTest {
         dashboardPage.password.sendKeys("Menna13");
         dashboardPage.mobile.sendKeys("1234567");
         dashboardPage.country.click();
-        WebElement countrySelected= driver.findElement(By.cssSelector("#select2-drop > ul > li:nth-child(6)"));
+        WebElement countrySelected = driver.findElement(By.cssSelector("#select2-drop > ul > li:nth-child(6)"));
         countrySelected.click();
         dashboardPage.address1.sendKeys("Address 1");
         dashboardPage.address2.sendKeys("Address 2");
@@ -73,8 +72,7 @@ public class DashBordPageTest {
     }
 
     @Test
-    public void editNewAdmin()
-    {
+    public void editNewAdmin() {
         assertTrue(dashboardPage.accountList.isDisplayed());
         dashboardPage.accountList.click();
         dashboardPage.adminPage.click();
@@ -91,33 +89,28 @@ public class DashBordPageTest {
     }
 
     @Test
-    public void leaveFormEmpty ()
-    {
+    public void leaveFormEmpty() {
         assertTrue(dashboardPage.accountList.isDisplayed());
         dashboardPage.accountList.click();
         dashboardPage.adminPage.click();
         assertTrue(dashboardPage.addAdminBtn.isDisplayed());
         dashboardPage.addAdminBtn.click();
         dashboardPage.submitBtn.click();
-        try
-        {
+        try {
             assertTrue(dashboardPage.emptyFirstNameFieldError().isDisplayed());
             assertTrue(dashboardPage.emptyLastNameFieldError().isDisplayed());
             assertTrue(dashboardPage.emptyEmailFieldError().isDisplayed());
             assertTrue(dashboardPage.emptyPasswordFieldError().isDisplayed());
             assertTrue(dashboardPage.emptyCountryFieldError().isDisplayed());
 
-        }
-        catch (TimeoutException e)
-        {
+        } catch (TimeoutException e) {
             System.out.println("TimeOut");
             fail();
         }
     }
 
     @Test
-    public void repatedEmailUsed()
-    {
+    public void repatedEmailUsed() {
         assertTrue(dashboardPage.accountList.isDisplayed());
         dashboardPage.accountList.click();
         dashboardPage.adminPage.click();
@@ -129,20 +122,17 @@ public class DashBordPageTest {
         dashboardPage.password.sendKeys("Menna13");
         dashboardPage.mobile.sendKeys("1234567");
         dashboardPage.country.click();
-        WebElement countrySelected= driver.findElement(By.cssSelector("#select2-drop > ul > li:nth-child(6)"));
+        WebElement countrySelected = driver.findElement(By.cssSelector("#select2-drop > ul > li:nth-child(6)"));
         countrySelected.click();
         dashboardPage.address1.sendKeys("Address 1");
         dashboardPage.address2.sendKeys("Address 2");
         dashboardPage.addLocation.click();
         dashboardPage.editLocation.click();
         dashboardPage.submitBtn.click();
-        try
-        {
+        try {
             assertTrue(dashboardPage.repeatedEmailError().isDisplayed());
 
-        }
-        catch (TimeoutException e)
-        {
+        } catch (TimeoutException e) {
             System.out.println("TimeOut");
             fail();
         }
@@ -150,8 +140,7 @@ public class DashBordPageTest {
     }
 
     @Test
-    public void shortPasswordUsed()
-    {
+    public void shortPasswordUsed() {
         assertTrue(dashboardPage.accountList.isDisplayed());
         dashboardPage.accountList.click();
         dashboardPage.adminPage.click();
@@ -163,20 +152,17 @@ public class DashBordPageTest {
         dashboardPage.password.sendKeys("Men");
         dashboardPage.mobile.sendKeys("1234567");
         dashboardPage.country.click();
-        WebElement countrySelected= driver.findElement(By.cssSelector("#select2-drop > ul > li:nth-child(6)"));
+        WebElement countrySelected = driver.findElement(By.cssSelector("#select2-drop > ul > li:nth-child(6)"));
         countrySelected.click();
         dashboardPage.address1.sendKeys("Address 1");
         dashboardPage.address2.sendKeys("Address 2");
         dashboardPage.addLocation.click();
         dashboardPage.editLocation.click();
         dashboardPage.submitBtn.click();
-        try
-        {
+        try {
             assertTrue(dashboardPage.shortPasswordError().isDisplayed());
 
-        }
-        catch (TimeoutException e)
-        {
+        } catch (TimeoutException e) {
             System.out.println("TimeOut");
             fail();
         }
@@ -184,8 +170,7 @@ public class DashBordPageTest {
     }
 
     @After
-    public void tearDown() throws Exception
-    {
-       dashboardPage.postStop();
+    public void tearDown() throws Exception {
+        dashboardPage.postStop();
     }
 }

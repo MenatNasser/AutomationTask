@@ -2,6 +2,7 @@ package com.dell;
 
 import com.dell.Pages.DashboardPage;
 import com.dell.Pages.LoginPage;
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -26,16 +27,15 @@ public class NewAdminScenariosTest {
     public void setUp() throws Exception {
         driver = new ChromeDriver();
         //1
-         loginPage = new LoginPage(driver);
+        loginPage = new LoginPage(driver);
         //2
-        loginPage.login(loginPage.properties.getProperty("newAdminEmail"),loginPage.properties.getProperty("newAdminPassword"));
+        loginPage.login(loginPage.properties.getProperty("newAdminEmail"), loginPage.properties.getProperty("newAdminPassword"));
         //3
         dashboardPage = loginPage.getDashboardPage();
     }
 
     @Test
-    public void loginWithNewAdmin()
-    {
+    public void loginWithNewAdmin() {
 
         try {
             DashboardPage dashboardPage = loginPage.getDashboardPage();
@@ -49,15 +49,14 @@ public class NewAdminScenariosTest {
     }
 
     @Test
-    public  void addNewLocation()
-    {
+    public void addNewLocation() {
         assertTrue(dashboardPage.locationList.isDisplayed());
         dashboardPage.locationList.click();
         dashboardPage.locationPage.click();
         assertTrue(dashboardPage.addLocationBtn.isDisplayed());
         dashboardPage.addLocationBtn.click();
         dashboardPage.locationCountry.click();
-        WebElement countrySelected= driver.findElement(By.cssSelector("#select2-drop > ul > li:nth-child(48)"));
+        WebElement countrySelected = driver.findElement(By.cssSelector("#select2-drop > ul > li:nth-child(48)"));
         countrySelected.click();
         //dashboardPage.locationCity.sendKeys("Test");
         dashboardPage.locationLongt.sendKeys("31.24967");
@@ -65,6 +64,11 @@ public class NewAdminScenariosTest {
         dashboardPage.locationArName.sendKeys("منة");
         dashboardPage.submitLocationBtn.click();
         //assertTrue(dashboardPage.changesSavedNotification().isDisplayed());
+    }
+
+    @After
+    public void tearDown() throws Exception {
+        dashboardPage.postStop();
     }
 
 }

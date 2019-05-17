@@ -59,23 +59,20 @@ public class AdminLoginPageTest {
         }
 
     }
+
     //Second case : Wrong credentials entered
     @Test
-    public void wrongCredentialsCase()
-    {
+    public void wrongCredentialsCase() {
 
         loginPage.emailField.sendKeys("me@test.com");
         loginPage.passwordField.sendKeys("mnoeee_1991");
         loginPage.loginButton.click();
         //Asserting on error message
-        try
-        {
+        try {
 
             WebElement wrongCredErrorMsg = loginPage.getWrongCredErrorMsg();
             assertTrue(wrongCredErrorMsg.isDisplayed());
-        }
-        catch (TimeoutException e)
-        {
+        } catch (TimeoutException e) {
             System.out.println("TimeOut");
             fail();
         }
@@ -83,20 +80,16 @@ public class AdminLoginPageTest {
 
     //Third case: Verifying 'Forget password?' link
     @Test
-    public void forgetPasswordCase()
-    {
+    public void forgetPasswordCase() {
         //Checking existence of 'Forget password?' link
-        try
-        {
+        try {
             loginPage.forgetPassworLnk.click();
             WebDriverWait wait = new WebDriverWait(driver, 5);
             wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.id("resetemail")));
             WebElement resetEmailField = driver.findElement(By.id("resetemail"));
             assertTrue(resetEmailField.isDisplayed());
 
-        }
-        catch (NoSuchElementException e)
-        {
+        } catch (NoSuchElementException e) {
             System.out.println("Forget password not working " + e.getMessage());
             fail();
         }
@@ -104,23 +97,19 @@ public class AdminLoginPageTest {
 
     //Fourth case: Invalid mail format
     @Test
-    public void invalidEmailCase()
-    {
+    public void invalidEmailCase() {
 
         loginPage.emailField.sendKeys("metest.com");
         loginPage.passwordField.sendKeys(loginPage.properties.getProperty("passwordAdmin"));
         loginPage.loginButton.click();
 
         //Asserting on invalid mail error
-        try
-        {
+        try {
 
             WebElement emailError = loginPage.getEmailFieldError();
             assertTrue(emailError.isDisplayed());
 
-        }
-        catch (TimeoutException e)
-        {
+        } catch (TimeoutException e) {
             System.out.println("TimeOut");
             fail();
         }
@@ -128,23 +117,19 @@ public class AdminLoginPageTest {
 
     // Fifth case: Special characters used in fields
     @Test
-    public void invalidCase()
-    {
+    public void invalidCase() {
 
         loginPage.emailField.sendKeys("!@#$%^%$");
         loginPage.passwordField.sendKeys("!@@");
         loginPage.loginButton.click();
 
         //Asserting for the errors
-        try
-        {
+        try {
 
             WebElement emailError = loginPage.getEmailFieldError();
             assertTrue(emailError.isDisplayed());
 
-        }
-        catch (TimeoutException e)
-        {
+        } catch (TimeoutException e) {
             System.out.println("TimeOut");
             fail();
         }

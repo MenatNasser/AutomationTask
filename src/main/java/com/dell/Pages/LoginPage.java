@@ -63,7 +63,7 @@ public class LoginPage extends BaseTest {
     /**
      * Sucess login for manging the flow
      */
-   public void login(String username, String password){
+    public void login(String username, String password) {
 
         emailField.sendKeys(username);
         passwordField.sendKeys(password);
