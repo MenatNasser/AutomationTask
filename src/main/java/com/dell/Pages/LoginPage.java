@@ -26,7 +26,10 @@ public class LoginPage extends BaseTest {
     @FindBy(id = "link-forgot")
     public WebElement forgetPassworLnk;
 
+
+    //Constructor for LoginPage class
     public LoginPage(WebDriver webDriver) {
+
         //calling constructor of BaseTest
         super(webDriver);
 
@@ -42,18 +45,21 @@ public class LoginPage extends BaseTest {
     }
 
 
+    //Error message thrown on entering any wrong credentials
     public WebElement getWrongCredErrorMsg() {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector("form.form-signin.form-horizontal.wow.fadeIn.animated.animated > div.resultlogin > div")));
         return driver.findElement(By.cssSelector("form.form-signin.form-horizontal.wow.fadeIn.animated.animated > div.resultlogin > div"));
     }
 
+    //Error message thrown on entering accurate credentials
     public WebElement redirectionMessage() {
         WebDriverWait wait = new WebDriverWait(driver, 5);
-        WebElement redirectionSuccessAlert = driver.findElement(By.cssSelector("form.form-signin.form-horizontal.wow.fadeIn.animated.animated > div.resultlogin > div"));
+        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector("form.form-signin.form-horizontal.wow.fadeIn.animated.animated > div.resultlogin > div")));
         return driver.findElement(By.cssSelector("form.form-signin.form-horizontal.wow.fadeIn.animated.animated > div.resultlogin > div"));
     }
 
+    //Error message thrown on entering  invalid email
     public WebElement getEmailFieldError() {
         WebDriverWait wait = new WebDriverWait(driver, 5);
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector("form.form-signin.form-horizontal.wow.fadeIn.animated.animated > div.resultlogin > div")));
@@ -61,7 +67,10 @@ public class LoginPage extends BaseTest {
     }
 
     /**
-     * Sucess login for manging the flow
+     * Calling login function before every test
+     *
+     * @param1 String username with accurate email
+     * @param2 String password with accurate password for the related email
      */
     public void login(String username, String password) {
 
@@ -72,9 +81,9 @@ public class LoginPage extends BaseTest {
     }
 
     /**
-     * Call this function after login success
+     * Call this function after login success to access elements on dashboard
      *
-     * @return
+     * @return Dashboard object
      */
     public DashboardPage getDashboardPage() throws TimeoutException {
         WebDriverWait wait = new WebDriverWait(driver, 5);

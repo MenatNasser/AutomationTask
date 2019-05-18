@@ -15,11 +15,10 @@ import static org.junit.Assert.*;
 
 public class AdminLoginPageTest {
 
-    // This is to setup testing execution before each test case
-
     WebDriver driver;
     LoginPage loginPage;
 
+    // This is to setup testing execution before each test case
     @Before
     public void setUp() throws Exception {
         driver = new ChromeDriver();
@@ -35,7 +34,6 @@ public class AdminLoginPageTest {
         loginPage.passwordField.sendKeys(loginPage.properties.getProperty("passwordAdmin"));
         loginPage.rememebermeChk.click();
         loginPage.loginButton.click();
-
 
         //detecting login validation
         try {
@@ -135,21 +133,9 @@ public class AdminLoginPageTest {
         }
     }
 
-
+    // This is to run after each case executed
     @After
     public void tearDown() throws Exception {
         loginPage.postStop();
     }
 }
-
-//
-//    @Test
-//    public void testMailInputExists() {
-////        redirectButton.click();
-//
-//
-//        WebElement email = driver.findElement(By.name("email"));
-//        System.out.print(email.getTagName());
-//        assertTrue(email.isEnabled());
-//
-//    }

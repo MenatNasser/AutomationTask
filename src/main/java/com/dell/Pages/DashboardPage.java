@@ -10,9 +10,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+//This class to include all static elements on the Dashboard page after user login
 public class DashboardPage extends BaseTest {
-
-//add all buttons required on dashboard
 
     @FindBy(xpath = "//a[@href='https://www.phptravels.net/admin/logout']")
     public WebElement logOutLink;
@@ -70,46 +69,49 @@ public class DashboardPage extends BaseTest {
     public WebElement submitLocationBtn;
 
 
+    // Notification appeared after any changes made
     public WebElement changesSavedNotification() {
         WebDriverWait wait = new WebDriverWait(driver, 15);
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("ui-pnotify-title")));
         return driver.findElement(By.className("ui-pnotify-title"));
-//        WebElement redirectionSuccessAlert = driver.findElement(By.cssSelector("form.form-signin.form-horizontal.wow.fadeIn.animated.animated > div.resultlogin > div"));
-//        return driver.findElement(By.cssSelector("form.form-signin.form-horizontal.wow.fadeIn.animated.animated > div.resultlogin > div"));
-
     }
 
+    // Error thrown when user fill new admin form without email
     public WebElement emptyEmailFieldError() {
         WebDriverWait wait = new WebDriverWait(driver, 5);
-        //wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector("div.alert.alert-danger > p:nth-child(2)")));
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//*[contains(text(),'The Email field is required.')]")));
         return driver.findElement(By.xpath("//*[contains(text(),'The Email field is required.')]"));
     }
 
+    // Error thrown when user fill new admin form without password
     public WebElement emptyPasswordFieldError() {
         WebDriverWait wait = new WebDriverWait(driver, 5);
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//*[contains(text(),'The Password field is required.')]")));
         return driver.findElement(By.xpath("//*[contains(text(),'The Password field is required.')]"));
     }
 
+    // Error thrown when user fill new admin form without country
     public WebElement emptyCountryFieldError() {
         WebDriverWait wait = new WebDriverWait(driver, 5);
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//*[contains(text(),'The Country field is required.')]")));
         return driver.findElement(By.xpath("//*[contains(text(),'The Country field is required.')]"));
     }
 
+    // Error thrown when user fill new admin form without First name
     public WebElement emptyFirstNameFieldError() {
         WebDriverWait wait = new WebDriverWait(driver, 5);
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//*[contains(text(),'The First Name field is required.')]")));
         return driver.findElement(By.xpath("//*[contains(text(),'The First Name field is required.')]"));
     }
 
+    // Error thrown when user fill new admin form without Last name
     public WebElement emptyLastNameFieldError() {
         WebDriverWait wait = new WebDriverWait(driver, 5);
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//*[contains(text(),'The Last Name field is required.')]")));
         return driver.findElement(By.xpath("//*[contains(text(),'The Last Name field is required.')]"));
     }
 
+    // Error thrown when user fill new admin form with short password
     public WebElement shortPasswordError() {
         WebDriverWait wait = new WebDriverWait(driver, 5);
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//*[contains(text(),'The Password field must be at least 6 characters in length.')]")));
@@ -117,13 +119,14 @@ public class DashboardPage extends BaseTest {
     }
 
 
+    // Error thrown when user fill new admin form with email already used on system
     public WebElement repeatedEmailError() {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//*[contains(text(),'The Email field must contain a unique value.')]")));
         return driver.findElement(By.xpath("//*[contains(text(),'The Email field must contain a unique value.')]"));
     }
 
-
+    // Constructor to DashBoard class
     public DashboardPage(WebDriver webDriver) {
 
         super(webDriver);
@@ -135,6 +138,6 @@ public class DashboardPage extends BaseTest {
             System.out.println("Elements not found" + e.getMessage());
         }
     }
-
-    // AcountPgae getAcoountPage() // same as DashBorad page in login page
 }
+
+// AcountPgae getAcoountPage() // same as DashBorad page in login page

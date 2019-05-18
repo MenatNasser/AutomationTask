@@ -15,8 +15,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.TimeUnit;
 
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
+import static org.junit.Assert.*;
 
 public class NewAdminScenariosTest {
     WebDriver driver;
@@ -61,14 +60,15 @@ public class NewAdminScenariosTest {
         //dashboardPage.locationCity.sendKeys("Test");
         dashboardPage.locationLongt.sendKeys("31.24967");
         dashboardPage.locationLatit.sendKeys("30.06263");
+        assertTrue(dashboardPage.locationCity.isEnabled());
         dashboardPage.locationArName.sendKeys("منة");
-        dashboardPage.submitLocationBtn.click();
+        //dashboardPage.submitLocationBtn.click();
         //assertTrue(dashboardPage.changesSavedNotification().isDisplayed());
     }
 
     @After
     public void tearDown() throws Exception {
-        dashboardPage.postStop();
+        //dashboardPage.postStop();
     }
 
 }

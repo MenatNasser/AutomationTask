@@ -7,7 +7,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
-// This Class to init the driver and load config properties
+// This Class to initialize the driver and load config properties
 public abstract class BaseTest {
 
     public WebDriver driver;
@@ -35,7 +35,7 @@ public abstract class BaseTest {
 
 
     /**
-     * Run after each case
+     * Closure that run after each case
      */
     public void postStop() {
         driver.close();

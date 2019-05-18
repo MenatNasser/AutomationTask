@@ -11,7 +11,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import static org.junit.Assert.assertTrue;
@@ -19,37 +18,22 @@ import static org.junit.Assert.fail;
 
 public class DashBordPageTest {
 
-    // This is to setup testing execution before each test case
-
     WebDriver driver;
     DashboardPage dashboardPage;
 
+    // This is to setup testing execution before each test case
     @Before
     public void setUp() throws Exception {
         driver = new ChromeDriver();
-        //1
+        //1 To use elements from Login page
         LoginPage loginPage = new LoginPage(driver);
-        //2
+        //2 To login to the system
         loginPage.login(loginPage.properties.getProperty("emailAdmin"), loginPage.properties.getProperty("passwordAdmin"));
-        //3
+        //3 To initiate object from dashboard
         dashboardPage = loginPage.getDashboardPage();
-
-        // flow to aconnt
-        /*
-         driver = new ChromeDriver();
-        //1
-        LoginPage loginPage = new LoginPage(driver);
-        //2
-        loginPage.login();
-        //3
-        dashboardPage = loginPage.getDashboardPage();
-
-        acountPgae =dashboardPage.getAcountPage();
-
-        ....
-         */
     }
 
+    // First case: Adding new admin
     @Test
     public void addNewAdmin() {
         assertTrue(dashboardPage.accountList.isDisplayed());
@@ -71,6 +55,7 @@ public class DashBordPageTest {
         assertTrue(dashboardPage.changesSavedNotification().isDisplayed());
     }
 
+    // Second case: Editing permission to new admin
     @Test
     public void editNewAdmin() {
         assertTrue(dashboardPage.accountList.isDisplayed());
@@ -88,6 +73,7 @@ public class DashBordPageTest {
         assertTrue(dashboardPage.changesSavedNotification().isDisplayed());
     }
 
+    // Third case: Leave new admin form empty
     @Test
     public void leaveFormEmpty() {
         assertTrue(dashboardPage.accountList.isDisplayed());
@@ -109,8 +95,9 @@ public class DashBordPageTest {
         }
     }
 
+    // Fourth case: Using already used mail on the system
     @Test
-    public void repatedEmailUsed() {
+    public void repeatedEmailUsed() {
         assertTrue(dashboardPage.accountList.isDisplayed());
         dashboardPage.accountList.click();
         dashboardPage.adminPage.click();
@@ -136,9 +123,9 @@ public class DashBordPageTest {
             System.out.println("TimeOut");
             fail();
         }
-
     }
 
+    // Fifth case: Using already short password
     @Test
     public void shortPasswordUsed() {
         assertTrue(dashboardPage.accountList.isDisplayed());
@@ -169,6 +156,7 @@ public class DashBordPageTest {
 
     }
 
+    // This is to run after each case executed
     @After
     public void tearDown() throws Exception {
         dashboardPage.postStop();
