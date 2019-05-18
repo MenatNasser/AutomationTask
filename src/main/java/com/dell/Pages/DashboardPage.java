@@ -13,11 +13,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 //This class to include all static elements on the Dashboard page after user login
 public class DashboardPage extends BaseTest {
 
-    @FindBy(xpath = "//a[@href='https://www.phptravels.net/admin/logout']")
+    @FindBy(xpath = "//a[@href='https://www.phptravels.net/admin-portal/admin/logout']")
     public WebElement logOutLink;
     @FindBy(xpath = "//a[@href='#ACCOUNTS']")
     public WebElement accountList;
-    @FindBy(xpath = "//a[@href='https://www.phptravels.net/admin/accounts/admins/']")
+    @FindBy(xpath = "//a[@href='https://www.phptravels.net/admin-portal/admin/accounts/admins/']")
     public WebElement adminPage;
     @FindBy(css = "div.panel.panel-default > form > button")
     public WebElement addAdminBtn;
@@ -49,9 +49,9 @@ public class DashboardPage extends BaseTest {
     public WebElement editLocation;
     @FindBy(xpath = "//a[@href='#Locations']")
     public WebElement locationList;
-    @FindBy(xpath = "//a[@href='https://www.phptravels.net/supplier/locations']")
+    @FindBy(xpath = "//a[@href='https://www.phptravels.net/admin-portal/supplier/locations']")
     public WebElement locationPage;
-    @FindBy(xpath = "//a[@href='https://www.phptravels.net/admin/locations/add']")
+    @FindBy(xpath = "//a[@href='https://www.phptravels.net/admin-portal/admin/locations/add']")
     public WebElement addLocationBtn;
     @FindBy(className = "select2-choice")
     public WebElement locationCountry;

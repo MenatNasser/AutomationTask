@@ -5,10 +5,7 @@ import com.dell.Pages.LoginPage;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.openqa.selenium.By;
-import org.openqa.selenium.TimeoutException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -31,8 +28,12 @@ public class NewAdminScenariosTest {
         loginPage.login(loginPage.properties.getProperty("newAdminEmail"), loginPage.properties.getProperty("newAdminPassword"));
         //3
         dashboardPage = loginPage.getDashboardPage();
+        Dimension d = new Dimension(1024,768);
+        //Resize the current window to the given dimension
+        driver.manage().window().setSize(d);
     }
 
+    //First case: Authenticating new admin
     @Test
     public void loginWithNewAdmin() {
 
@@ -47,6 +48,7 @@ public class NewAdminScenariosTest {
         }
     }
 
+    //Second case: Adding new location by new admin
     @Test
     public void addNewLocation() {
         assertTrue(dashboardPage.locationList.isDisplayed());
@@ -62,13 +64,23 @@ public class NewAdminScenariosTest {
         dashboardPage.locationLatit.sendKeys("30.06263");
         assertTrue(dashboardPage.locationCity.isEnabled());
         dashboardPage.locationArName.sendKeys("منة");
-        //dashboardPage.submitLocationBtn.click();
-        //assertTrue(dashboardPage.changesSavedNotification().isDisplayed());
+        dashboardPage.submitLocationBtn.click();
+        assertTrue(dashboardPage.changesSavedNotification().isDisplayed());
     }
+
+//    //Third case: Editing new location by new admin
+//    @Test
+//    public void editNewLocation() {
+//    }
+
+//    //Fourth case: Editing new location by new admin
+//    @Test
+//    public void deleteNewLocation() {
+//    }
 
     @After
     public void tearDown() throws Exception {
-        //dashboardPage.postStop();
+        dashboardPage.postStop();
     }
 
 }

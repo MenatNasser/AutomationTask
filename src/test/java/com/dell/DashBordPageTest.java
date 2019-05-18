@@ -5,10 +5,7 @@ import com.dell.Pages.LoginPage;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.openqa.selenium.By;
-import org.openqa.selenium.TimeoutException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -25,6 +22,9 @@ public class DashBordPageTest {
     @Before
     public void setUp() throws Exception {
         driver = new ChromeDriver();
+        Dimension d = new Dimension(1024,768);
+        //Resize the current window to the given dimension
+        driver.manage().window().setSize(d);
         //1 To use elements from Login page
         LoginPage loginPage = new LoginPage(driver);
         //2 To login to the system

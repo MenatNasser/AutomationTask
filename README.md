@@ -3,7 +3,7 @@ This is to do automation task sent for adding new admin, editing his rules and a
 
 Used Page object model design pattern to easiness the maintainability of the web elements used in the automation script. 
 
-Test scenarios covered:
+Test scenarios covered for positive and negative cases:
 Existing Admin login- Successful login with accurate credentials 
 Existing Admin login- Validating on not entering any wrong email/password
 Existing Admin login-Validating on not entering invalid email

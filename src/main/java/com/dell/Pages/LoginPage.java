@@ -87,7 +87,7 @@ public class LoginPage extends BaseTest {
      */
     public DashboardPage getDashboardPage() throws TimeoutException {
         WebDriverWait wait = new WebDriverWait(driver, 5);
-        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//a[@href='https://www.phptravels.net/admin']")));
+        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//a[@href='https://www.phptravels.net/admin-portal/admin']")));
         return new DashboardPage(driver);
 
     }

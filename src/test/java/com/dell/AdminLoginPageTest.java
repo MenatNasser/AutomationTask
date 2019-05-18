@@ -22,6 +22,9 @@ public class AdminLoginPageTest {
     @Before
     public void setUp() throws Exception {
         driver = new ChromeDriver();
+        Dimension d = new Dimension(1024,768);
+        //Resize the current window to the given dimension
+        driver.manage().window().setSize(d);
         loginPage = new LoginPage(driver);
 
     }
