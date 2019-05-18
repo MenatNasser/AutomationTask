@@ -10,6 +10,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 //This class to include all static elements on the Login page
 public class LoginPage extends BaseTest {
 
+    @FindBy(xpath = "//a[@href='https://www.phptravels.net/admin/t']")
+    public WebElement adminLogin;
 
     @FindBy(name = "email")
     public WebElement emailField;
@@ -32,9 +34,7 @@ public class LoginPage extends BaseTest {
 
         //calling constructor of BaseTest
         super(webDriver);
-
         webDriver.get(properties.getProperty("adminLoginUrl"));
-
         try {
             //Initializes annotated by FindBy elements
             PageFactory.initElements(webDriver, this);
@@ -73,7 +73,6 @@ public class LoginPage extends BaseTest {
      * @param2 String password with accurate password for the related email
      */
     public void login(String username, String password) {
-
         emailField.sendKeys(username);
         passwordField.sendKeys(password);
         rememebermeChk.click();

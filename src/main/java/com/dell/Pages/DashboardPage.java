@@ -63,8 +63,22 @@ public class DashboardPage extends BaseTest {
     public WebElement locationLatit;
     @FindBy(name = "status")
     public WebElement locationStatus;
+    @FindBy(name = "translated[ru][name]")
+    public WebElement locationRuName;
+    @FindBy(name = "translated[fa][name]")
+    public WebElement locationFaName;
+    @FindBy(name = "translated[fr][name]")
+    public WebElement locationFrName;
+    @FindBy(name = "translated[tr][name]")
+    public WebElement locationTrName;
     @FindBy(name = "translated[ar][name]")
     public WebElement locationArName;
+    @FindBy(name = "translated[es][name]")
+    public WebElement locationEsName;
+    @FindBy(className = "fa-edit")
+    public WebElement editLocationBtn;
+    @FindBy(className = "fa-times")
+    public WebElement deleteLocationBtn;
     @FindBy(className = "btn-primary")
     public WebElement submitLocationBtn;
 
@@ -139,5 +153,3 @@ public class DashboardPage extends BaseTest {
         }
     }
 }
-
-// AcountPgae getAcoountPage() // same as DashBorad page in login page

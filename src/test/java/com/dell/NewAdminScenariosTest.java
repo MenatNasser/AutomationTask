@@ -9,7 +9,6 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.util.concurrent.TimeUnit;
 
 import static org.junit.Assert.*;
@@ -67,17 +66,42 @@ public class NewAdminScenariosTest {
         dashboardPage.submitLocationBtn.click();
         assertTrue(dashboardPage.changesSavedNotification().isDisplayed());
     }
+/*
+    //Third case: Editing new location by new admin
+    @Test
+    public void editNewLocation() {
+        assertTrue(dashboardPage.accountList.isDisplayed());
+        dashboardPage.locationList.click();
+        dashboardPage.locationPage.click();
+        assertTrue(dashboardPage.addLocationBtn.isDisplayed());
+        WebDriverWait wait = new WebDriverWait(driver, 5);
+        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//*[contains(text(),'Egypt')]")));
+        assertTrue(dashboardPage.editLocationBtn.isDisplayed());
+        dashboardPage.editLocationBtn.click();
+        dashboardPage.locationRuName.sendKeys("Russia");
+        dashboardPage.locationFaName.sendKeys("Farsi");
+        dashboardPage.locationFrName.sendKeys("French");
+        dashboardPage.locationTrName.sendKeys("Turkish");
+        dashboardPage.locationEsName.sendKeys("Espanol");
+        dashboardPage.submitBtn.click();
+        assertTrue(dashboardPage.changesSavedNotification().isDisplayed());
+    }
 
-//    //Third case: Editing new location by new admin
-//    @Test
-//    public void editNewLocation() {
-//    }
-
-//    //Fourth case: Editing new location by new admin
-//    @Test
-//    public void deleteNewLocation() {
-//    }
-
+    //Fourth case: Editing new location by new admin
+    @Test
+    public void deleteNewLocation() {
+        assertTrue(dashboardPage.accountList.isDisplayed());
+        dashboardPage.locationList.click();
+        dashboardPage.locationPage.click();
+        assertTrue(dashboardPage.addLocationBtn.isDisplayed());
+        WebDriverWait wait = new WebDriverWait(driver, 5);
+        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//*[contains(text(),'Egypt')]")));
+        assertTrue(dashboardPage.editLocationBtn.isDisplayed());
+        dashboardPage.deleteLocationBtn.click();
+        //Assert on delete message
+        //assertTrue(deleteErrormessage.isDisplayed());
+    }
+*/
     @After
     public void tearDown() throws Exception {
         dashboardPage.postStop();
